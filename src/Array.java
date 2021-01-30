@@ -6,23 +6,32 @@
  */
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
-        int a[] = {7,3,6,4,5};
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter size of an array");
+        int n = s.nextInt();
 
-        Arrays.sort(a);
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
+        int [] arr = new int[n];
+
+        for (int i = 0; i <n ; i++) {
+            arr[i] =s.nextInt();
         }
 
-        int c = a[a.length-1];
-        int a1 = a[0];
-        int b1 = c;
-        int q = b1-a1;
+        int min = arr[0];
+        int max = arr[0];
 
-        System.out.println(" The differnce between both largest nad smallest numbers ");
-        System.out.print(q);
-
+        for (int i = 0; i <n ; i++) {
+            if(min>arr[i]) {
+                min = arr[i];
+            }
+            if(max<arr[i]) {
+                max = arr[i];
+            }
+        }
+        int diff = max - min;
+        System.out.println("difference between largest and smallest " +diff);
     }
 }
