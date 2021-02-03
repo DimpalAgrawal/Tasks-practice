@@ -7,12 +7,12 @@
 
 import java.util.Scanner;
 
-public class DuplicateElements {
+public class Task2 {
     public static void main(String[] args) {
+        System.out.println("enter the size of an array");
 
         Scanner s = new Scanner(System.in);
-        System.out.println("enter the size of an array");
-         int n = s.nextInt();
+        int n = s.nextInt();
 
          int [] arr = new int [n];
 

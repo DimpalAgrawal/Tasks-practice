@@ -8,7 +8,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Array {
+public class Task1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter size of an array");

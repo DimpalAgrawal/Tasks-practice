@@ -7,24 +7,24 @@
 
 import java.util.Scanner;
 
-public class Student {
+public class Task5 {
     private static String Name;
     private static int RollNo;
     private static String Subject;
 
-    public Student(String Name,int RollNo,String Subject) {
+    public Task5(String Name, int RollNo, String Subject) {
         this.Name = Name;
         this.RollNo = RollNo;
         this.Subject = Subject;
     }
 
-    public Student() {
+    public Task5() {
         this.Name = "Abc";
         this.RollNo = 2;
         this.Subject = "Java";
     }
 
-    public Student(int nextInt, String next) {
+    public Task5(int nextInt, String next) {
 
     }
 
@@ -54,9 +54,9 @@ public class Student {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Student arr[] = new Student[10];
+        Task5 arr[] = new Task5[10];
         for (int i = 0; i <arr.length ; i++) {
-            arr[i] = new Student(s.nextInt(),s.next());
+            arr[i] = new Task5(s.nextInt(),s.next());
         }
     }
 }
