@@ -80,12 +80,13 @@ public class BSTlinkedlist {
 
 
     public void inorderTraversal(Node root) {
-      if(root == null) {
-          return;
-      }
-      inorderTraversal(root.left);
-        System.out.println(root.data);
-      inorderTraversal(root.right);
+        if (root != null) {
+
+
+            inorderTraversal(root.left);
+            System.out.println(root.data);
+            inorderTraversal(root.right);
+        }
     }
 }
 
