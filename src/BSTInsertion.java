@@ -7,6 +7,9 @@
 
 // Program Insertion in binary  search tree
 
+// BsT insertion
+
+
 
 public class BSTInsertion {
     public static Node insert(Node root, int data) {
