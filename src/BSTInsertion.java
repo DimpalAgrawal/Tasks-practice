@@ -17,7 +17,7 @@ public class BSTInsertion {
         if (root == null) {
             root = newnode;
             return root;
-        } else if (data <= (root.data)) {
+        } else if (data <(root.data)) {
             root.left = insert(root.left, root.data);
         } else {
             root.right = insert(root.right, root.data);
@@ -28,14 +28,28 @@ public class BSTInsertion {
 
 
     public static void preorder(Node root) {
-
-        if (root == null) {
+        if (root!= null) {
         System.out.println(root.data);
         preorder(root.left);
         preorder(root.right);
     }
+    }
 
-}
+    boolean Search(Node root, int data){
+        if(root == null){
+            return false;
+        }
+        else if(root.data == data){
+            return true;
+        }
+        else if(data<=root.data){
+            Search(root.left,root.data);
+        }
+        else{
+            return Search(root.right,root.data);
+        }
+        return true;
+    }
 
 
     public static void main(String[] args) {
